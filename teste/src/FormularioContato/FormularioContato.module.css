@@ -1,0 +1,11 @@
+.meuFormulario {
+    display: flex;
+  flex-direction: column;
+}
+
+.meuInput {
+    border: 0;
+    width: 200px;
+    background-color: beige;
+    color: black;
+}

@@ -1,0 +1,18 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 8px;
+}
