@@ -2,17 +2,17 @@ import { useState } from "react";
 import styles from './FormularioContato.module.css'
 
 export default function FormularioContato() {
-  const [nome, setNome] = useState("");
+  const [ideia, setideia] = useState("");
   const [erro, setErro] = useState("");
 
   function aoEnviar(event) {
     event.preventDefault();
-    if (nome.trim() === "") {
-      setErro("Nome é obrigatório.");
+    if (ideia.trim() === "") {
+      setErro("Esse campo precisa ser prenchido");
       return;
     }
     setErro("");
-    console.log("Enviado:", nome);
+    console.log("Enviado:", ideia);
   }
 
   return (
@@ -20,13 +20,13 @@ export default function FormularioContato() {
       <input
       className={styles.meuInput}
         type="text"
-        value={nome}
-        onChange={event => setNome(event.target.value)}
-        placeholder="Seu nome"
+        value={ideia}
+        onChange={event => setideia(event.target.value)}
+        placeholder="Suas ideias"
       />
-      <input type="checkbox" />
       {erro && <p style={{ color: "red" }}>{erro}</p>}
-      <button type="submit">Enviar</button>
+      <button type="submit" className={styles.Botao}>Enviar</button>
+
     </form>
   );
 }

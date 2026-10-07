@@ -1,11 +1,18 @@
 .meuFormulario {
-    display: flex;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .meuInput {
     border: 0;
-    width: 200px;
+    width: 250px;
     background-color: beige;
     color: black;
 }
+
+.Botao{
+width: 50px;
+
+}
+
